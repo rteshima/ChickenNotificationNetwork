@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="mainMenuViewController" customModule="chickenNewsNetwork" customModuleProvider="target">
+            <connections>
+                <outlet property="lastUpdated" destination="Dwp-TM-Bd3" id="jtK-SV-lcR"/>
+                <outlet property="mainPic" destination="mKL-v6-X3z" id="JlL-4M-8c7"/>
+                <outlet property="timeLight" destination="MZf-gh-dqp" id="5zW-ap-dy7"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="svw-d2-EUq">
+                    <rect key="frame" x="0.0" y="548" width="375" height="64"/>
+                    <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="64" id="nd4-ki-MUn"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="24"/>
+                    <state key="normal" title="Post Photo">
+                        <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                    </state>
+                    <connections>
+                        <action selector="PostPic:" destination="-1" eventType="touchUpInside" id="GQ2-x1-J51"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Chicken last seen:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dwp-TM-Bd3">
+                    <rect key="frame" x="20" y="453" width="117.66666666666669" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Location: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kiG-Ql-TbN">
+                    <rect key="frame" x="20" y="486" width="64" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mKL-v6-X3z">
+                    <rect key="frame" x="20" y="96" width="335" height="335"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="mKL-v6-X3z" secondAttribute="height" multiplier="1:1" id="src-xB-EhQ"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MMw-60-33v">
+                    <rect key="frame" x="123" y="651" width="128" height="99"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="128" id="SXf-dr-WOZ"/>
+                        <constraint firstAttribute="width" secondItem="MMw-60-33v" secondAttribute="height" multiplier="128:99" id="YYY-lA-Tnp"/>
+                    </constraints>
+                    <state key="normal" title="Hall of Fame" image="Troph"/>
+                    <connections>
+                        <action selector="TrophyButton:" destination="-1" eventType="touchUpInside" id="cnp-kF-O5t"/>
+                    </connections>
+                </button>
+                <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VRL-o1-6mn">
+                    <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                    <items>
+                        <navigationItem id="z0F-lc-z5G">
+                            <barButtonItem key="leftBarButtonItem" title="Report" id="GHG-FC-CA1">
+                                <color key="tintColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </barButtonItem>
+                            <barButtonItem key="rightBarButtonItem" title="Settings" id="H4o-EL-fMq"/>
+                        </navigationItem>
+                    </items>
+                </navigationBar>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MZf-gh-dqp">
+                    <rect key="frame" x="325" y="445" width="30" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bQ4-LY-rtE">
+                    <rect key="frame" x="302" y="483" width="53" height="30"/>
+                    <state key="normal" title="Refresh"/>
+                    <connections>
+                        <action selector="refresh:" destination="-1" eventType="touchUpInside" id="dFk-ym-rZf"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="svw-d2-EUq" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="2sW-0C-yQX"/>
+                <constraint firstItem="mKL-v6-X3z" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="6Wy-rd-XfD"/>
+                <constraint firstItem="MMw-60-33v" firstAttribute="top" secondItem="svw-d2-EUq" secondAttribute="bottom" constant="16" id="GQG-AK-Jmq"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="VRL-o1-6mn" secondAttribute="trailing" id="KyA-Vy-Ds9"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="bQ4-LY-rtE" secondAttribute="trailing" constant="20" id="OUX-Fy-akO"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="mKL-v6-X3z" secondAttribute="trailing" constant="20" id="SXe-I8-ePn"/>
+                <constraint firstItem="Dwp-TM-Bd3" firstAttribute="top" secondItem="mKL-v6-X3z" secondAttribute="bottom" constant="16" id="a4d-WN-4ed"/>
+                <constraint firstItem="mKL-v6-X3z" firstAttribute="top" secondItem="VRL-o1-6mn" secondAttribute="bottom" constant="8" id="bTx-c1-Hfn"/>
+                <constraint firstItem="svw-d2-EUq" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="fdd-Au-qv7"/>
+                <constraint firstItem="bQ4-LY-rtE" firstAttribute="top" secondItem="mKL-v6-X3z" secondAttribute="bottom" constant="52" id="iNQ-dk-5GW"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="MMw-60-33v" secondAttribute="bottom" constant="8" id="iP0-uL-Qw3"/>
+                <constraint firstItem="VRL-o1-6mn" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="jOE-pQ-ZTf"/>
+                <constraint firstItem="kiG-Ql-TbN" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="k9a-JR-VHX"/>
+                <constraint firstItem="kiG-Ql-TbN" firstAttribute="top" secondItem="Dwp-TM-Bd3" secondAttribute="bottom" constant="16" id="mzj-ga-QUe"/>
+                <constraint firstItem="Dwp-TM-Bd3" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="tgb-9A-mpg"/>
+                <constraint firstItem="MMw-60-33v" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="vKe-aP-d4F"/>
+                <constraint firstItem="VRL-o1-6mn" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="ym3-EM-OCu"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="33.5" y="53"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Troph" width="400" height="400"/>
+    </resources>
+</document>

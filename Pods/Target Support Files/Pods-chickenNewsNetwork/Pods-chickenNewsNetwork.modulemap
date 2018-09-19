@@ -1,0 +1,6 @@
+framework module Pods_chickenNewsNetwork {
+  umbrella header "Pods-chickenNewsNetwork-umbrella.h"
+
+  export *
+  module * { export * }
+}

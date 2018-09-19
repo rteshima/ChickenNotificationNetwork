@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="signupViewController" customModule="chickenNewsNetwork" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mn0-0m-c47">
+                    <rect key="frame" x="32" y="287" width="311" height="72"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="311" id="Rnz-58-ryh"/>
+                        <constraint firstAttribute="width" secondItem="Mn0-0m-c47" secondAttribute="height" multiplier="311:72" id="Ud3-im-kgg"/>
+                    </constraints>
+                    <state key="normal" title="Johns Hopkins" image="university.logo_.small_.horizontal.blue_"/>
+                    <connections>
+                        <action selector="jhuPressed:" destination="-1" eventType="touchUpInside" id="AF6-kH-dig"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XaQ-Vd-BPY">
+                    <rect key="frame" x="76.666666666666671" y="375" width="221.66666666666663" height="72"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="XaQ-Vd-BPY" secondAttribute="height" multiplier="339:110" id="z8I-5D-4xD"/>
+                    </constraints>
+                    <state key="normal" title="New York University" image="805ec85d72f3462a0c0bd0734b1013a9-1"/>
+                    <connections>
+                        <action selector="nyuPressed:" destination="-1" eventType="touchUpInside" id="VRw-1Q-Plh"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EQf-Tg-XVM">
+                    <rect key="frame" x="79.000000000000014" y="463" width="217.33333333333337" height="72"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="EQf-Tg-XVM" secondAttribute="height" multiplier="172:57" id="WsO-jW-1KI"/>
+                    </constraints>
+                    <state key="normal" title="Stanford" image="stanford"/>
+                    <connections>
+                        <action selector="stanfPressed:" destination="-1" eventType="touchUpInside" id="K3K-Pe-odr"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Select Your School" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Lf-Ys-YNj">
+                    <rect key="frame" x="0.0" y="174" width="375" height="44"/>
+                    <color key="backgroundColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="30"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="XaQ-Vd-BPY" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="3I5-c6-fnl"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="0Lf-Ys-YNj" secondAttribute="trailing" id="4Vd-QZ-c3a"/>
+                <constraint firstItem="EQf-Tg-XVM" firstAttribute="top" secondItem="XaQ-Vd-BPY" secondAttribute="bottom" constant="16" id="AQ7-gI-6dv"/>
+                <constraint firstItem="EQf-Tg-XVM" firstAttribute="height" secondItem="Mn0-0m-c47" secondAttribute="height" id="EXJ-fx-KLY"/>
+                <constraint firstItem="0Lf-Ys-YNj" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="HQ7-0D-zJC"/>
+                <constraint firstItem="EQf-Tg-XVM" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="LKk-zX-hqj"/>
+                <constraint firstItem="XaQ-Vd-BPY" firstAttribute="top" secondItem="Mn0-0m-c47" secondAttribute="bottom" constant="16" id="NOc-GP-bNb"/>
+                <constraint firstItem="Mn0-0m-c47" firstAttribute="height" secondItem="XaQ-Vd-BPY" secondAttribute="height" id="eYt-73-rgq"/>
+                <constraint firstItem="0Lf-Ys-YNj" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="gYd-OB-gB9"/>
+                <constraint firstItem="Mn0-0m-c47" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="gqd-MW-yo7"/>
+                <constraint firstItem="0Lf-Ys-YNj" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="120" id="wtZ-lT-qmc"/>
+                <constraint firstItem="XaQ-Vd-BPY" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="zfm-M7-dXK"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="33.5" y="53"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="805ec85d72f3462a0c0bd0734b1013a9-1" width="1956" height="666"/>
+        <image name="stanford" width="1045" height="368"/>
+        <image name="university.logo_.small_.horizontal.blue_" width="8000" height="1771"/>
+    </resources>
+</document>
